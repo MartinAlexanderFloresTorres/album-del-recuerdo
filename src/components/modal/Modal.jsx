@@ -1,5 +1,5 @@
 import { GrFormClose } from 'react-icons/gr'
-import './Modal.css'
+import './modal.css'
 
 const Modal = ({ show, onHide, children }) => {
   if (!show) return null
