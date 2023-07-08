@@ -1,0 +1,84 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  overflow: auto;
+}
+.modal-flex {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+.modal-header {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+  row-gap: 20px;
+  border-bottom: 1px solid #333333;
+}
+.modal-close-button {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #898989;
+  background: #1f1f1f;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+}
+.modal-close-button svg {
+  width: 30px;
+  height: 30px;
+}
+.modal-close-button path {
+  stroke: #fff;
+}
+.modal-close-button:hover {
+  color: #fff;
+  background: #333333;
+}
+.modal-card {
+  width: 100%;
+  background: #1f1f1f;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid #333333;
+}
+.modal-body {
+  padding: 1rem;
+}
+.modal-body-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.modal-body-text {
+  font-size: 1rem;
+  font-weight: 400;
+  /* margin-bottom: 1rem; */
+}
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.modal-footer {
+  border-top: 1px solid #333333;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
